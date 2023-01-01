@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpHejtoApi", "HejtoApi\CsharpHejtoApi.csproj", "{E39ED463-8D46-477A-B571-0CBE01E977CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpHejtoApi", "CsharpHejtoApi\CsharpHejtoApi.csproj", "{E39ED463-8D46-477A-B571-0CBE01E977CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
