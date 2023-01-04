@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 namespace CsharpHejtoApi.Models
 {
     [Serializable]
-    public class AuthorLinks
+    public class EmbeddedPost
     {
-        public First? self { get; set; }
-        public First? follows { get; set; }
+        public List<PostItem> items { get; set; }
     }
 }

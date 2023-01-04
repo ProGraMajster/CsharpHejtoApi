@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace CsharpHejtoApi.Models
 {
     [Serializable]
-    public class AuthorLinks
+    public class AchievementElement
     {
-        public First? self { get; set; }
-        public First? follows { get; set; }
+        public AchievementAchievement? achievement { get; set; }
+        public DateTime? createdAt { get; set; }
     }
 }

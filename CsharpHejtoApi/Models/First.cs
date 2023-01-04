@@ -9,6 +9,6 @@ namespace CsharpHejtoApi.Models
     [Serializable]
     public class First
     {
-        public string? href;
+        public string? href { get; set; }
     }
 }

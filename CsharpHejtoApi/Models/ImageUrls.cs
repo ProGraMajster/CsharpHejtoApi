@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace CsharpHejtoApi.Models
 {
-    [Serializable]
-    public class AvatarUrls
+    public class ImageUrls
     {
-        [JsonPropertyName("100x100")]
-        public string? the100X100 { get; set; }
-        [JsonPropertyName("250x250")]
         public string? the250X250 { get; set; }
+        public string? the500X500 { get; set; }
+        public string? the1200X900 { get; set; }
     }
 }

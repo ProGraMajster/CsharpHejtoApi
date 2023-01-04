@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace CsharpHejtoApi.Models
 {
     [Serializable]
-    public class AuthorLinks
+    public class EmbeddedComment
     {
-        public First? self { get; set; }
-        public First? follows { get; set; }
+        [JsonPropertyName("items")]
+        public List<CommentItem>? items;
     }
 }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace CsharpHejtoApi.Models
 {
-    [Serializable]
-    public class AuthorLinks
+    public class TagLinks
     {
         public First? self { get; set; }
         public First? follows { get; set; }
+        public First? blocks { get; set; }
     }
 }

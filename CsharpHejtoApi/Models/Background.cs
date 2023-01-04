@@ -9,8 +9,8 @@ namespace CsharpHejtoApi.Models
     [Serializable]
     public class Background
     {
-        public BackgroundUrls? urls;
-        public string? uuid;
-        public string? alt;
+        public BackgroundUrls? urls { get; set; }
+        public string? uuid { get; set; }
+        public string? alt { get; set; }
     }
 }

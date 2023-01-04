@@ -6,10 +6,5 @@ using System.Threading.Tasks;
 
 namespace CsharpHejtoApi.Models
 {
-    [Serializable]
-    public class AuthorLinks
-    {
-        public First? self { get; set; }
-        public First? follows { get; set; }
-    }
+    public enum PostType { DISCUSSION, LINK, ARTICLE, OFFER }
 }

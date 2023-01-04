@@ -9,8 +9,8 @@ namespace CsharpHejtoApi.Models
     [Serializable]
     public class Avatar
     {
-        public AvatarUrls? urls;
-        public string? uuid;
-        public string? alt;
+        public AvatarUrls? urls { get; set; }
+        public string? uuid { get; set; }
+        public string? alt { get; set; }
     }
 }

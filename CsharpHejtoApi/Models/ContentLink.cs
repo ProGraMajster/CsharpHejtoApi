@@ -11,14 +11,14 @@ namespace CsharpHejtoApi.Models
     [Serializable]
     public class ContentLink
     {
-        public string? url;
-        public string? site;
-        public string? type;
-        public string? title;
-        public List<dynamic>? audios;
-        public List<Image>? images;
-        public List<Video>? videos;
-        public Favicon? favicon;
-        public string? description;
+        public string? url { get; set; }
+        public string? site { get; set; }
+        public string? type { get; set; }
+        public string? title { get; set; }
+        public List<dynamic>? audios { get; set; }
+        public List<Image>? images { get; set; }
+        public List<Video>? videos { get; set; }
+        public Favicon? favicon { get; set; }
+        public string? description { get; set; }
     }
 }

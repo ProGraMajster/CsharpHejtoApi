@@ -1,25 +1,26 @@
-﻿using System;
+﻿using CsharpHejtoApi.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace HejtoApi.Models
+namespace CsharpHejtoApi.Models
 {
     [Serializable]
     public class CommentItem
     {
-        public string? postSlug;
-        public string? content;
-        public string? contentPlain;
-        public List<ContentLink>? contentLinks;
-        public Author? author;
-        public List<dynamic>? images;
-        public Interactions? interactions;
-        public DateTime? createdAt;
-        public String? uuid;
-        public ItemLinks? links;
-        public int? numLikes;
+        public string? postSlug { get; set; }
+        public string? content { get; set; }
+        public string? contentPlain { get; set; }
+        public List<ContentLink>? contentLinks { get; set; }
+        public Author? author { get; set; }
+        public List<dynamic>? images { get; set; }
+        public Interactions? interactions { get; set; }
+        public DateTime? createdAt { get; set; }
+        public String? uuid { get; set; }
+        public ItemLinks? links { get; set; }
+        public int? numLikes { get; set; }
     }
 }

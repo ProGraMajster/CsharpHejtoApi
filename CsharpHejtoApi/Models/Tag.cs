@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HejtoApi.Models
+namespace CsharpHejtoApi.Models
 {
     [Serializable]
-    public class Embedded
+    public class Tag
     {
-        List<CommmentItem> items;
+        public string? name { get; set; }
+        public TagLinks? links { get; set; }
     }
 }

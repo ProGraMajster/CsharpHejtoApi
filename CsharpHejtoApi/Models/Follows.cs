@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 namespace CsharpHejtoApi.Models
 {
     [Serializable]
-    public class AuthorLinks
+    public class Follows
     {
-        public First? self { get; set; }
-        public First? follows { get; set; }
+        public string? href { get; set; }
     }
 }

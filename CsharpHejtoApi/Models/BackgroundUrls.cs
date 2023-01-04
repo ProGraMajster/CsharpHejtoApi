@@ -9,8 +9,8 @@ namespace CsharpHejtoApi.Models
     [Serializable]
     public class BackgroundUrls
     {
-        public string? the400X300;
-        public string? the1200X900;
-        public string? original;
+        public string? the400X300 { get; set; }
+        public string? the1200X900 { get; set; }
+        public string? original { get; set; }
     }
 }

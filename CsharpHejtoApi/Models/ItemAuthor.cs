@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 namespace CsharpHejtoApi.Models
 {
     [Serializable]
-    public class Author
+    public class ItemAuthor
     {
         public string? username { get; set; }
-        public Avatar? avatar { get; set; }
-        public Background? background { get; set; }
+        public CommunityAvatar? avatar { get; set; }
+        public CommunityBackground? background { get; set; }
         public string? status { get; set; }
-        public string? current_rank { get; set; }
-        public string? current_color { get; set; }
+        public string? currentRank { get; set; }
+        public string? currentColor { get; set; }
         public bool? verified { get; set; }
         public bool? sponsor { get; set; }
-        public DateTime? created_at { get; set; }
-        public AuthorLinks? _links { get; set; }
+        public DateTime? createdAt { get; set; }
+        public AuthorLinks? links { get; set; }
     }
 }

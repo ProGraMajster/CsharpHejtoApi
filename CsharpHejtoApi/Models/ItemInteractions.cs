@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 namespace CsharpHejtoApi.Models
 {
     [Serializable]
-    public class AuthorLinks
+    public class ItemInteractions
     {
-        public First? self { get; set; }
-        public First? follows { get; set; }
+        public bool? isLiked { get; set; }
+        public bool? isCommented { get; set; }
+        public bool? isFavorited { get; set; }
     }
 }

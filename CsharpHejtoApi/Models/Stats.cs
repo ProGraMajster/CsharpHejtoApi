@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 namespace CsharpHejtoApi.Models
 {
     [Serializable]
-    public class AuthorLinks
+    public class Stats
     {
-        public First? self { get; set; }
-        public First? follows { get; set; }
+        public int? numFollows { get; set; }
+        public int? numPosts { get; set; }
+        public int? numComments { get; set; }
     }
 }
