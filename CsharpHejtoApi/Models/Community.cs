@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace CsharpHejtoApi.Models
@@ -9,9 +10,12 @@ namespace CsharpHejtoApi.Models
     [Serializable]
     public class Community
     {
-        public string? name { get; set; }
-        public string? slug { get; set; }
-        public CommunityAvatar? avatar { get; set; }
+        [JsonPropertyName("name")]
+        public string? Name { get; set; }
+        [JsonPropertyName("slug")]
+        public string? Slug { get; set; }
+        [JsonPropertyName("avatar")]
+        public CommunityAvatar? Avatar { get; set; }
         public CommunityBackground? background { get; set; }
     }
 }

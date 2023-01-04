@@ -13,12 +13,13 @@ namespace CsharpHejtoApi.Models
     {
         [JsonPropertyName("page")]
         public int? Page { get; set; }
-        public int? limit { get; set; }
+        [JsonPropertyName("limit")]
+        public int? Limit { get; set; }
         public int? pages { get; set; }
         public int? total { get; set; }
         [JsonPropertyName("_links")]
         public PostLinks? Links { get; set; }
-        [JsonPropertyName("_embedded")]
+        [JsonPropertyName("")]
         public EmbeddedPost? Embedded { get; set; }
     }
 }
