@@ -11,8 +11,8 @@ namespace CsharpHejtoApi.Models
     public class AvatarUrls
     {
         [JsonPropertyName("100x100")]
-        public string? the100X100 { get; set; }
+        public string? The100X100 { get; set; }
         [JsonPropertyName("250x250")]
-        public string? the250X250 { get; set; }
+        public string? The250X250 { get; set; }
     }
 }

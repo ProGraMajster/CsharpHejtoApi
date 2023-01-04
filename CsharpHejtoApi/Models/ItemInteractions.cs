@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace CsharpHejtoApi.Models
@@ -9,8 +10,10 @@ namespace CsharpHejtoApi.Models
     [Serializable]
     public class ItemInteractions
     {
-        public bool? isLiked { get; set; }
-        public bool? isCommented { get; set; }
-        public bool? isFavorited { get; set; }
+        [JsonPropertyName("is_liked")]
+        public bool? IsLiked { get; set; }
+        //[JsonPropertyName("is_reported")]
+        public bool? IsCommented { get; set; }
+        public bool? IsFavorited { get; set; }
     }
 }

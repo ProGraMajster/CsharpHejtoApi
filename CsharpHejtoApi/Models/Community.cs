@@ -16,6 +16,7 @@ namespace CsharpHejtoApi.Models
         public string? Slug { get; set; }
         [JsonPropertyName("avatar")]
         public CommunityAvatar? Avatar { get; set; }
-        public CommunityBackground? background { get; set; }
+        [JsonPropertyName("background")]
+        public CommunityBackground? Background { get; set; }
     }
 }
