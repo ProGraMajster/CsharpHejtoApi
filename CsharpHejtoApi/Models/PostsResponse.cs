@@ -19,7 +19,7 @@ namespace CsharpHejtoApi.Models
         public int? total { get; set; }
         [JsonPropertyName("_links")]
         public PostLinks? Links { get; set; }
-        [JsonPropertyName("")]
+        [JsonPropertyName("_embedded")]
         public EmbeddedPost? Embedded { get; set; }
     }
 }

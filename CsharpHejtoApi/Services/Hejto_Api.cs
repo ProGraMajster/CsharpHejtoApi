@@ -19,12 +19,31 @@ namespace CsharpHejtoApi.Services
             try
             {
                 var request = client.GetStringAsync("https://api.hejto.pl/posts");
-                PostsResponse postsResponses  = (PostsResponse)JsonSerializer.Deserialize(request.Result, typeof(PostsResponse), new JsonSerializerOptions
+                PostsResponse postsResponse = (PostsResponse)JsonSerializer.Deserialize(request.Result, typeof(PostsResponse), new JsonSerializerOptions
                 {
                     PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
                     WriteIndented = true
                 });
-                return postsResponses;
+                return postsResponse;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                return null;
+            }
+        }
+        public PostsResponse GetPosts(string page, int limit=10)
+        {
+            try
+            {
+                string url = $"/posts?orderBy=p.createdAt&orderDir=desc&period=week&followed=0&liked=0&commented=0&favorited=0&excludeBlockedUsers=1&excludeBlockedTags=1&page={page}&limit={limit}";
+                var request = client.GetStringAsync("https://api.hejto.pl"+url);
+                PostsResponse postsResponse = (PostsResponse)JsonSerializer.Deserialize(request.Result, typeof(PostsResponse), new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                    WriteIndented = true
+                });
+                return postsResponse;
             }
             catch (Exception ex)
             {
